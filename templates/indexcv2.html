@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f0f0f0;
+            }
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+            h2 {
+                text-align: center;
+                color: #303;
+            }
+            div {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+            img {
+                border: 2px solid #333;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Live Streaming</h1>
+        <h2> Can you see me? </h2>
+        <div>
+            <img src="{{url_for('video')}}" width="70%"/>
+        </div>  
+    </body>
+<html>
